@@ -34,6 +34,7 @@ Part 2: Modelling
 * 4 = Sad
 * 5 = Surprise
 * 6 = Neutral
+
 [`fer2013plus.csv`](./data/fer2013plus.csv): FER+ dataset consisting of relabelled FER emotions in a probability distribution format per face. The index and rows are exactly the same as the original FER2013 dataset. FER+ introduces 3 additional emotion labels, `contempt`, `NF` and `unknown`.
 
 ## Data Dictionary
