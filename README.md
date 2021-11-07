@@ -6,18 +6,43 @@ Reduction in gatherings and social events, and the increase in remote meetings a
 - Using facial recognition, can we identify facial expressions and detect emotions?
 
 ## Contents
+Part 1: Data Cleaning
+* Loading of FER2013 and FER+ Datasets
+* Data Cleaning and Merging
+* Conversion of pixels to images, to save in associated labelled folders
+
+Part 2: Modelling
+* Train, Test, Split
+* Early Stopping, Checkpoints and ReduceLR
+* Modelling
+* Fitting
+* Misclassification Analysis
+* Model Evaluation
+* Testing with Random Images
+* Conclusion and Further Improvements
 
 ## Background
 
 ## Datasets
+2 datasets have been used for this project as shown below:
+
+ [`fer2013.csv`](./data/fer2013.csv): Facial Emotion Recognition 2013 dataset consisting of approximately 30,000 grayscale facial images of different expressions limited to 48 * 48 pixels. Each image is classified into 7 types of emotion:
+* 0 = Angry
+* 1 = Disgust
+* 2 = Fear
+* 3 = Happy
+* 4 = Sad
+* 5 = Surprise
+* 6 = Neutral
+[`fer2013plus.csv`](./data/fer2013plus.csv): FER+ dataset consisting of relabelled FER emotions in a probability distribution format per face. The index and rows are exactly the same as the original FER2013 dataset. FER+ introduces 3 additional emotion labels, `contempt`, `NF` and `unknown`.
 
 ## Data Dictionary
 
 ## Modelling
 
-## Evaluation
-
 ## Misclassification Analysis
+
+## Evaluation
 
 ## Conclusion
 While testing with identifying certain emotions, emotions such as contempt and disgust are still difficult to classify. This could likely be due to the lack of training data for those emotions.
