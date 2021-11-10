@@ -21,8 +21,6 @@ Part 2: Modelling
 * Testing with Random Images
 * Conclusion and Further Improvements
 
-## Background
-
 ## Datasets
 2 datasets have been used for this project as shown below:
 
@@ -38,6 +36,23 @@ Part 2: Modelling
 [`fer2013plus.csv`](./data/fer2013plus.csv): FER+ dataset consisting of relabelled FER emotions in a probability distribution format per face. The index and rows are exactly the same as the original FER2013 dataset. FER+ introduces 3 additional emotion labels, `contempt`, `NF` and `unknown`.
 
 ## Data Dictionary
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|**emotion**|*int64*|fer2013.csv|Category of emotion in FER2013|
+|**pixels**|*object*|fer2013.csv|Array of image pixel with brightness values ranging from 0-255|
+|**usage**|*object*|fer2013.csv|Intended usage of image between:<br> - Training <br> - PublicSet <br> - PrivateSet |
+|**Usage**|*object*|fer2013plus.csv|Intended usage of image between:<br> - Training <br> - PublicSet <br> - PrivateSet |
+|**Image name**|*object*|fer2013plus.csv|Specified image name|
+|**neutral**|*int64*|fer2013plus.csv|Probability of image being a neutral emotion|
+|**happiness**|*int64*|fer2013plus.csv|Probability of image being a happiness emotion|
+|**surprise**|*int64*|fer2013plus.csv|Probability of image being a surprise emotion|
+|**sadness**|*int64*|fer2013plus.csv|Probability of image being a sadness emotion|
+|**anger**|*int64*|fer2013plus.csv|Probability of image being a anger emotion|
+|**disgust**|*int64*|fer2013plus.csv|Probability of image being a disgust emotion|
+|**fear**|*int64*|fer2013plus.csv|Probability of image being a fear emotion|
+|**contempt**|*int64*|fer2013plus.csv|Probability of image being a contempt emotion|
+|**unknown**|*int64*|fer2013plus.csv|Probability of image being a unknown emotion|
+|**NF**|*int64*|fer2013plus.csv|Probability of image emotion that is not found|
 
 
 ## Misclassification Analysis
