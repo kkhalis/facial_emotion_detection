@@ -39,11 +39,16 @@ Part 2: Modelling
 
 ## Data Dictionary
 
-## Modelling
 
 ## Misclassification Analysis
+Looking at the misclassified data, I noticed that images are commonly misclassifed around anger, happiness or neutral. These misclassified images tend to have the presence of teeth, which can be misleading to the model as a smile due to brighter pixels around the mouth region. Additionally, pouts which have no exposure of teeth, became misclassified as a neutral emotion instead.
+
+Obscured facial features contribute to misclassification mostly due to 2 reasons. The key facial features are covered, so the model has lesser features to make an accurate prediction. Or, the model cannot detect a face, given hands are not part of facial detection here.
 
 ## Evaluation
+After utilising a few pre-trained models, i found out that Resnet50 managed with the highest accuracy score among the rest. The accuracy also plateaus around the 30th epoch, with minimal or no improvements in accuracy after.
+
+Pointing your attention to freezing of layers, using VGG16 without freezing the layers yielded a higher accuracy score compared to VGG16 with frozen layers. I hypothesize that the weights from imagenet might not cater too well specifically to facial expressions. Additionally, Resnet152 with 152 layers didn't perform as well, showing that models with more layers doesn't necessarily provide better accuracy.
 
 ## Conclusion
 While testing with identifying certain emotions, emotions such as contempt and disgust are still difficult to classify. This could likely be due to the lack of training data for those emotions.
