@@ -61,7 +61,7 @@ Looking at the misclassified data, I noticed that images are commonly misclassif
 Obscured facial features contribute to misclassification mostly due to 2 reasons. The key facial features are covered, so the model has lesser features to make an accurate prediction. Or, the model cannot detect a face, given hands are not part of facial detection here.
 
 ## Evaluation
-After utilising a few pre-trained models, i found out that Resnet50 managed with the highest accuracy score among the rest. The accuracy also plateaus around the 30th epoch, with minimal or no improvements in accuracy after.
+After utilising a few pre-trained models, I found out that Resnet50 managed with the highest accuracy score among the rest. The accuracy also plateaus around the 30th epoch, with minimal or no improvements in accuracy after.
 
 Pointing your attention to freezing of layers, using VGG16 without freezing the layers yielded a higher accuracy score compared to VGG16 with frozen layers. I hypothesize that the weights from imagenet might not cater too well specifically to facial expressions. Additionally, Resnet152 with 152 layers didn't perform as well, showing that models with more layers doesn't necessarily provide better accuracy.
 
