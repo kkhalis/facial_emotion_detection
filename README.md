@@ -78,3 +78,8 @@ There are also deeper facial features that can be focused on. Certain facial det
 
 ## Further Improvements
 Ideally, this project can still be further expanded for more classes of emotions, provided there are images to train. As this project was initially conceived based on wanting to understand people's emotions due to lifestyle and occupational transitions of remote work due to COVID-19, it can be redesigned to incorporate speech recognition to identify tonal changes in conversations to further improve identifying changes in an individual's expressions and feelings during video and/or voice calls.
+
+## References
+[1] FER Dataset - https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge
+[2] FER+ Dataset - https://github.com/microsoft/FERPlus
+[3] From raw images to real-time predictions with Deep Learning - https://towardsdatascience.com/from-raw-images-to-real-time-predictions-with-deep-learning-ddbbda1be0e4
