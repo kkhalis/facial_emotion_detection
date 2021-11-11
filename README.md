@@ -81,5 +81,7 @@ Ideally, this project can still be further expanded for more classes of emotions
 
 ## References
 [1] FER Dataset - https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge
+
 [2] FER+ Dataset - https://github.com/microsoft/FERPlus
+
 [3] From raw images to real-time predictions with Deep Learning - https://towardsdatascience.com/from-raw-images-to-real-time-predictions-with-deep-learning-ddbbda1be0e4
